@@ -1,0 +1,52 @@
+nav{
+	background-color: rgba(0,0,0,0.5);/*a pour alpha, la transparence*/
+	padding: 20px; /*pour espacer les objets entre eux, de l'intérieur de la div*/
+	text-align: center;
+}
+nav a{
+	color: white;
+	padding: 13px;
+	border: 1px solid transparent;/*couleur et taille de la bordure*/
+	border-radius: 15px;/*degré d'arrondi de la bordure*/
+	transition: all 0.5s
+}
+nav a:hover{/*hover pour quand on survole le texte en question*/
+	color: #107AB0;
+	transition: all 0.5s;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 15px;
+}
+#langues{
+	transform: scale(0.6)
+}
+/*2eme essai*/
+nav{
+	background-color: rgba(0,0,0,0.5);/*a pour alpha, la transparence*/
+	padding: 20px; /*pour espacer les objets entre eux, de l'intérieur de la div*/
+	text-align: center;
+}
+#linked{
+}
+#linked a{
+	color: white;
+	align-items: center;
+	padding: 13px;
+	border: 1px solid transparent;/*couleur et taille de la bordure*/
+	border-radius: 15px;/*degré d'arrondi de la bordure*/
+	transition: all 0.5s
+}
+#linked a:hover{/*hover pour quand on survole le texte en question*/
+	color: #107AB0;
+	transition: all 0.5s;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 15px;
+}
+#langues{
+	transform: scale(0.6);
+	margin-left: 80%;
+	margin-top: -4%;
+	margin-bottom: -2.5%;
+}
+#langues a{
+	padding: 5px; 
+}

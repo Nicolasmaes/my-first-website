@@ -1,0 +1,8 @@
+/*pour refuser les réglages par défaut des navigateurs*/
+*{
+	margin: 0;
+	padding: 0;
+}/*pour refuser la marge blanche autour de la page*/
+a{
+	text-decoration: none;
+}

@@ -1,0 +1,420 @@
+@font-face {
+     font-family: 'shadow_beamerregular';
+    src: url('./fonts/shadow_beamer-webfont.woff2') format('woff2'),
+         url('./fonts/shadow_beamer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;/*pour ajouter une police télécharger sur Dafont,
+    et Font squirrel la convertit de .tff à .woff, à mettre ensuite dans .website/fonts*/
+}
+html{
+	font-family: 'arial';
+	font-size: 16px;
+}
+body{
+	background: url('./images/fonds5.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	padding-bottom: 1%;/*pour bien pouvoir jouer avec les bas de div*/
+	background-position: center center;
+}
+#hero{
+	background: url('./images/fonds5.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	padding-bottom: 1%;/*pour bien pouvoir jouer avec les bas de div*/
+	background-position: center center;
+}
+
+#bandeau{
+	background-color: rgba(255,255,255,0.5);
+	margin-top: 5%;/*pour espacer les div entre elles*/
+	padding-bottom: 20px;
+}
+#contenu{
+	text-align: center;
+	padding: 15px;
+}
+nav{
+	background-color: rgba(99,98,94,0.7);
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+}
+#hamb{
+	margin-left: 8px;
+	align-self: center;
+	width: 24px;
+}
+#linked{
+	align-self: center;
+}
+#linked a{
+	color: white;
+	font-size: 16px;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 32px;
+	margin: 0px 5px;
+	border: 1px solid transparent;/*couleur et taille de la bordure*/
+	border-radius: 15px;/*degré d'arrondi de la bordure*/
+	transition: all 0.5s
+}
+#linked a:hover{/*hover pour quand on survole le texte en question*/
+	color: #107AB0;
+	transition: all 0.5s;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 15px;
+}
+#langues{
+	align-self: center;
+	margin-right: 8px;
+}
+h1{
+	background: linear-gradient(
+		to right,
+		#107AB0,
+		hsl(300, 80%, 54%)
+		);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 20px;
+}
+#deuxliens{
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+}
+#email a{
+	color: white;
+	font-size: 16px;
+	background: linear-gradient(rgb(136,192,225),rgb(62,79,109)) fixed;
+	padding: 18px 32px;
+	border: 1px solid transparent;
+	border-radius: 15px;/*pour un angle spécifique : border-top-left-radius etc...*/
+	transition: all 0.5s;
+	margin: 0px 10px;
+}
+#email a:hover{
+	transition: all 0.5s;
+	color: #107AB0;
+	border: 1px solid #107AB0;
+	background-color: transparent;
+}
+#lead{
+	background: linear-gradient(rgb(136,192,225),rgb(62,79,109)) fixed;
+	color: white;
+	border: 1px solid transparent;
+	font-size: 16px;
+	border-radius: 25px;/*pour un angle spécifique : border-top-left-radius etc...*/
+	transition: all 0.5s;
+	max-width: 240px;
+	max-height:600px;
+	font-size: 16px;
+	font-weight: lighter;
+	font-family: arial;
+	padding: 18px 32px;
+	margin: 0px 10px;
+	transform: scale(0.8);
+}
+#lead h3{
+	font-size: 16px;
+}
+#lead:hover{
+	background-color: transparent;
+	border: 1px solid #107AB0;
+	color: #107AB0;
+	transition: all 0.5s;
+}
+#mce-success-response{
+	color: white!important;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: none;
+}
+body{
+	min-height: 100vh;
+	position: center;
+}
+.wavy{
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	transform: scale(-0.5);
+	transition: all 0.5s;
+}
+.wavy:hover{
+	transform: scale(-0.7);
+	transition: all 0.5s;
+}
+.wavy span{
+	position: absolute;
+	top: calc(12px * var(--i));
+	left: calc(12px * var(--i));
+	right: calc(12px * var(--i));
+	bottom: calc(12px * var(--i));
+	border: 2px solid transparent;
+	border-top: 10px solid #107AB0;
+	border-left: 10px solid #107AB0;
+	border-radius: 50%;
+	filter: hue-rotate(calc(14deg * var(--i)));
+	animation: wavy 1.3s infinite alternate;
+	animation-delay: calc(0.1s * var(--i));
+}
+@keyframes wavy{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(240deg);
+	}
+}
+#sourceinsta{
+	text-align: right;
+}
+#sourceinsta a{
+	color: black;
+	font-size: 16px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	text-align: right;
+	background-color: rgb(243,208,170);
+	margin: 20px;
+	padding: 2px;
+	font-family: 'Raleway';
+	transition: all 0.5s;
+}
+#sourceinsta a:hover{
+	border: 1px solid transparent;
+	color: white;
+	border-radius: 10px;
+	margin: 20px;
+	background-color: rgb(108,84,56);
+	transition: all 0.5s;
+}
+.barre{
+	/*background-color: rgb(136,192,225);	*/
+	height: 10px;
+	background: url('./images/fonds5.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	background-position: center center;
+}
+#apropos{
+	display: flex;
+	position: relative;
+}
+#apropos_image{
+	flex: 1;
+	padding-right: 10px;
+	background: url('./images/fonds5.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	padding-bottom: 1%;/*pour bien pouvoir jouer avec les bas de div*/
+	background-position: center center;
+}
+#apropos_image img{
+	padding: 10px;
+	max-width: 100%;/*l'image prend au maximum la largeur de son contenant, soit 100% du tiers de la page*/
+}
+#apropos_texte{
+	display: flex;
+	padding: 10px;
+	flex: 2;
+	text-align: justify;
+	align-items: center;
+	padding-right: 15px;
+	background: linear-gradient(to bottom,rgb(136,192,225),rgb(62,79,109)) fixed;
+	color: white;
+	border-radius: 20px;
+}
+#apropos_texte a{
+	background-color: rgba(136,192,225,0.6);
+	color: black;
+	padding: 2px;
+	transition: all 0.5s;
+}
+#apropos_texte a:hover{/*hover pour quand on survole le texte en question*/
+	transition: all 0.5s;
+	border-radius: 10px;
+	background-color: rgba(136,192,225,0.6);
+}
+#services{
+	display: flex;
+	background: linear-gradient(rgb(136,192,225),rgb(62,79,109)) fixed;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+#services p{
+	text-align: justify;
+	margin: 10px;
+}
+#services i:hover{
+	transform: scale(1.2);/*pour agrandir ou rétrecir l'image*/
+	transition: all 0.5s;
+	color: #107AB0;
+}
+#services i{
+	transition: all 0.5s;
+}
+.si1{
+	width: 33%;
+}
+.si2{
+	width: 33%;
+}
+.si3{
+	width: 33%;
+}
+@media screen and (max-width: 414px){
+	#apropos{
+		flex-direction: column;
+	}/*fermeture de la déclaration apropos*/
+}/*fermture de la media query*/
+@media screen and (max-width: 414px){
+	h1{
+	margin-bottom: 40px;
+	}
+	body{
+	background: url('./images/fonds5.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	padding-bottom: 1%;/*pour bien pouvoir jouer avec les bas de div*/
+	background-position: center center;
+}
+nav{
+		display: flex;
+		flex-wrap: wrap;
+		height: 200px;
+	}
+	#hamb{
+		text-align: center;
+		transform: scale(1);
+		margin-left: 8px;
+	}
+	#linked a{
+		display: flex;
+	}
+	#langues a{
+		display: flex;
+		margin: 8px;
+	}
+
+	#deuxliens{
+		flex-direction: column;
+		align-items: center;
+	}
+	#lead{
+		margin-top: -20px;
+	}
+	#services{
+		flex-direction: column;
+	}
+	.si1{
+		width: 100%;
+	}
+	.si2{
+		width: 100%;
+	}
+	.si3{
+		width: 100%;
+	}
+	.wavy{
+		position: relative;
+	}
+	.modalbtn a{
+		display: block;
+		margin-bottom: 5%;
+	}
+	.modal h4{
+		font-size: 30px;
+	}
+	.modal h5{
+		font-size: 15px;
+	}
+	.modalbtn a{
+		font-size: 12px;
+	}
+	.modalicon{
+	transform: scale(0.8);
+}
+}
+footer{
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	background: url('./images/fonds5.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	padding-bottom: 1%;/*pour bien pouvoir jouer avec les bas de div*/
+	background-position: center center;
+}
+footer a{
+	color: white;
+	padding: 20px;
+	transition: all 0.5s;
+}
+footer a:hover{
+	color: #107AB0;
+	transition: all 0.5s;
+}
+.modal{
+	display: none;
+	position: fixed;
+	left: 0px; /* sans marge à gauche */
+	top: 0px; /* sans marge en haut */
+	background-color: rgba(0, 0, 0, 0.76);
+	height: 100%; /* pleine hauteur */
+	width :100%; /* pleine largeur */
+	z-index: 1; /* se place au dessus */
+}
+#croix{
+	margin-left: 95%;
+	display: flex;
+}
+.modalbloc{
+	margin: 4% auto;
+	padding: 20px;
+	width: 50%;
+	text-align: center;
+	background-color: white;
+	color: black;
+	border-top: 10px solid black;
+	border-radius: 20px;
+}
+.modalbtn{
+	margin: 5%;
+}
+.modalbtn a{
+	color: white;
+	background-color: black;
+	padding: 18px 32px;
+	border-radius: 30px;
+}
+.modalbtn a:hover{
+	opacity: 0.7;
+}
+.modaltexttitle{
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+.modaltextsubtitle{
+	font-size: 20px;
+}
+.modaltext img{
+	width: 60%;
+	border-radius: 20px;
+}

@@ -1,0 +1,42 @@
+h1{
+	background: linear-gradient(
+		to right,
+		#107AB0,
+		hsl(300, 80%, 54%)
+		);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 20px;
+}
+body{
+	background: url(images/fond2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;/*pour qu'elle couvre toute la page */
+	padding-bottom: 1%;/*pour bien pouvoir jouer avec les bas de div*/
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	color: black;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 20px;
+}
+#contenu{
+	margin-top: 20%;
+}
+#backbtn{
+	border: 1px solid white;
+	border-radius: 20px;
+}
+a{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 5px;
+}
